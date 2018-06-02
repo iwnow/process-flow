@@ -1,0 +1,23 @@
+{
+  "name": "process-flow",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwnow/process-flow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iwnow/process-flow/issues"
+  },
+  "homepage": "https://github.com/iwnow/process-flow#readme",
+  "devDependencies": {
+    "standard-version": "^4.4.0"
+  }
+}
