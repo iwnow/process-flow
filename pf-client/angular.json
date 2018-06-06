@@ -134,6 +134,46 @@
           }
         }
       }
+    },
+    "pf-components": {
+      "root": "projects/pf-components",
+      "sourceRoot": "projects/pf-components/src",
+      "projectType": "library",
+      "prefix": "pfc",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/pf-components/tsconfig.lib.json",
+            "project": "projects/pf-components/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/pf-components/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/pf-components/src/test.ts",
+            "tsConfig": "projects/pf-components/tsconfig.spec.json",
+            "karmaConfig": "projects/pf-components/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/pf-components/tsconfig.lib.json",
+              "projects/pf-components/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "pf-client"
