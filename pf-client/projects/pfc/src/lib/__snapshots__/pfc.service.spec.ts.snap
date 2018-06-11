@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PfComponentsService snap test 1`] = `
+Object {
+  "k": 6,
+}
+`;

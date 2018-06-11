@@ -135,38 +135,38 @@
         }
       }
     },
-    "pf-components": {
-      "root": "projects/pf-components",
-      "sourceRoot": "projects/pf-components/src",
+    "pfc": {
+      "root": "projects/pfc",
+      "sourceRoot": "projects/pfc/src",
       "projectType": "library",
       "prefix": "pfc",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/pf-components/tsconfig.lib.json",
-            "project": "projects/pf-components/ng-package.json"
+            "tsConfig": "projects/pfc/tsconfig.lib.json",
+            "project": "projects/pfc/ng-package.json"
           },
           "configurations": {
             "production": {
-              "project": "projects/pf-components/ng-package.prod.json"
+              "project": "projects/pfc/ng-package.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/pf-components/src/test.ts",
-            "tsConfig": "projects/pf-components/tsconfig.spec.json",
-            "karmaConfig": "projects/pf-components/karma.conf.js"
+            "main": "projects/pfc/src/test.ts",
+            "tsConfig": "projects/pfc/tsconfig.spec.json",
+            "karmaConfig": "projects/pfc/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/pf-components/tsconfig.lib.json",
-              "projects/pf-components/tsconfig.spec.json"
+              "projects/pfc/tsconfig.lib.json",
+              "projects/pfc/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

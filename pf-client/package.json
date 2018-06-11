@@ -5,16 +5,16 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:pfc": "ng build pf-components",
-		"test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
+    "build:pfc": "ng build pfc",
+    "test": "jest",
+    "test:w": "jest --watch",
+    "test:c": "jest --coverage",
+    "test:g": "jest --json --outputFile=.jest-test-results.json || true",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "storybook-pfc": "start-storybook -p 9001 -c ./projects/pf-components/.storybook"
-	},
-	"jest": {
+    "storybook-pfc": "start-storybook -p 9001 -c ./projects/pfc/.storybook"
+  },
+  "jest": {
     "preset": "jest-preset-angular",
     "coveragePathIgnorePatterns": [
       "/jest-config/",
@@ -49,8 +49,6 @@
     "@angular/language-service": "^6.0.3",
     "@storybook/angular": "^4.0.0-alpha.8",
     "@storybook/cli": "^4.0.0-alpha.8",
-    "@types/jasmine": "~2.8.6",
-    "@types/jasminewd2": "~2.0.3",
     "@types/jest": "^23.0.0",
     "@types/node": "^8.9.5",
     "babel-core": "^6.26.3",

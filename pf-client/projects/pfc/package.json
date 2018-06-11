@@ -1,5 +1,5 @@
 {
-  "name": "pf-components",
+  "name": "pfc",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^6.2.0",
